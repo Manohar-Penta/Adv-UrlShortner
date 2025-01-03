@@ -198,11 +198,18 @@ Provides overall analytics for all URLs created by the authenticated user.
 ### Environment Variables
 
 - **Environment Variables:**
+<<<<<<< HEAD
   - `HOST_URL`: Base URL for short URLs.
   - `DATABASE_URL` : PostgreSQL database connection URL.
   - `GOOGLE_CLIENT_ID` : OAuth 2.0 Client ID for Google Sign-In.
   - `GOOGLE_CLIENT_SECRET` : OAuth 2.0 Client Secret for Google Sign-In.
   - `GOOGLE_CALLBACK_URL` : OAuth 2.0 Google callback URL.
+=======
+  - `HOSTNAME`: Base URL for short URLs.
+  - `DATABASE_URL` : PostgreSQL database connection URL.
+  - `GOOGLE_CLIENT_ID` : OAuth 2.0 Client ID for Google Sign-In.
+  - `GOOGLE_CLIENT_SECRET` : OAuth 2.0 Client Secret for Google Sign-In.
+>>>>>>> 384e737 (first_working version)
   - `MONGO_URL`:MongoDB connection URL for data storage.
   - `REDIS_CLIENT_URL` : Redis connection URL for caching and session management.
   - `SESSION_SECRET`: Secret key for encrypting session data.
