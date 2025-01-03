@@ -8,9 +8,9 @@ const swaggerDefinition: SwaggerDefinition = {
     title: "URL Shortener API",
     description: "API documentation for the URL Shortener application.",
   },
-  host: "localhost:3000",
+  host: "adv-urlshortner.onrender.com",
   basePath: "/",
-  schemes: ["http"],
+  schemes: ["https"],
   paths: {
     "/auth/google": {
       get: {
