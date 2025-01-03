@@ -4,9 +4,12 @@
 
 This API provides a URL shortening service with integrated Google authentication, analytics, and rate-limiting features. It is built using Node.js, Express, Prisma (PostgreSQL), Redis, and MongoDB for session management.
 
-## Base URL
+## Trial
 
-`http://<your-hostname>`
+**Visit [here](https://adv-urlshortner.onrender.com/auth/google) to get authenticated before using the api or using swagger docs.**
+
+- Hosted : [`https://adv-urlshortner.onrender.com`](https://adv-urlshortner.onrender.com)
+- Swagger Docs : [`https://adv-urlshortner.onrender.com/docs`](https://adv-urlshortner.onrender.com/docs) (highly suggested)
 
 ---
 
@@ -195,10 +198,11 @@ Provides overall analytics for all URLs created by the authenticated user.
 ### Environment Variables
 
 - **Environment Variables:**
-  - `HOSTNAME`: Base URL for short URLs.
+  - `HOST_URL`: Base URL for short URLs.
   - `DATABASE_URL` : PostgreSQL database connection URL.
   - `GOOGLE_CLIENT_ID` : OAuth 2.0 Client ID for Google Sign-In.
   - `GOOGLE_CLIENT_SECRET` : OAuth 2.0 Client Secret for Google Sign-In.
+  - `GOOGLE_CALLBACK_URL` : OAuth 2.0 Google callback URL.
   - `MONGO_URL`:MongoDB connection URL for data storage.
   - `REDIS_CLIENT_URL` : Redis connection URL for caching and session management.
   - `SESSION_SECRET`: Secret key for encrypting session data.
