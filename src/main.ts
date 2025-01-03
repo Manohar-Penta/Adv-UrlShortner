@@ -36,6 +36,8 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.set("trust proxy", true);
+
 // mongo based session storage and retreival
 app.use(
   session({
